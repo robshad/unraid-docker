@@ -17,7 +17,7 @@
   <Support>http://lime-technology.com/forum/index.php?topic=40400.0</Support>
   <Registry>https://registry.hub.docker.com/u/robshad/filebot/</Registry>
   <GitHub>https://github.com/robshad/docker-filebot</GitHub>
-  <Repository>robshad/docker-filebot</Repository>
+  <Repository>robshad/filebot</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
