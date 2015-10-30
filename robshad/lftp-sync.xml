@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Downloaders:</Category>
+  <Date>2015-10-30</Date>
+  <Changes>
+  [center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_small.png'][/center]
+ 
+  [center][font size=4]LFTP Sync Change Log[/font][/center]
+  [b]10/30/2015:[/b] Initial Release. 
+  </Changes>
+  <Name>lftp-sync</Name>
+  <Support>http://www.robshad.com</Support>
+  <Description>
+  Stuff
+  </Description>
+  <Project>http://lftp.yar.ru//</Project>
+  <Overview>FTP is a sophisticated ftp/http client, and a file transfer program supporting a number of network protocols. Like BASH, it has job control and uses the readline library for input. It has bookmarks, a built-in mirror command, and can transfer several files in parallel. It was designed with reliability in mind. LFTP is free software, distributed under the GNU GPL license.</Overview>
+  <Registry>https://registry.hub.docker.com/u/robshad/lftp-sync/</Registry>
+  <Repository>robshad/lftp-sync</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/lftp-sync/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/target</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+<WebUI>http://[IP]:[PORT]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-banner.png</Banner>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
