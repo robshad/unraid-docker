@@ -2,9 +2,8 @@
 <Container>
   <Beta>False</Beta>
   <Category>Downloaders:</Category>
-  <Date>2015-10-30</Date>
+  <Date>2015-11-02</Date>
   <Changes>
-  [center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_small.png'][/center]
  
   [center][font size=4]LFTP Sync Change Log[/font][/center]
   [b]10/30/2015:[/b] Initial Release. 
@@ -12,15 +11,24 @@
   <Name>lftp-sync</Name>
   <Support>http://www.robshad.com</Support>
   <Description>
-  Stuff
+  This Docker will download from your remote server to your local unRAID server.[br][br]
+    [b][span style='color: #E80000;']Steps you must take for this to work: [/b][br]
+    You must set the environment variable:[br][br]
+    [ul][li]REMOTEDIR[/li]
+    [br][br]
+    You also must create the lftp-sync.cfg. You can rename the example config (lftp-sync-defaults.cfg)
   </Description>
-  <Project>http://lftp.yar.ru//</Project>
-  <Overview>FTP is a sophisticated ftp/http client, and a file transfer program supporting a number of network protocols. Like BASH, it has job control and uses the readline library for input. It has bookmarks, a built-in mirror command, and can transfer several files in parallel. It was designed with reliability in mind. LFTP is free software, distributed under the GNU GPL license.</Overview>
+  <Project>http://lftp.yar.ru/</Project>
+  <Overview>LFTP is a sophisticated ftp/http client, and a file transfer program supporting a number of network protocols. Like BASH, it has job control and uses the readline library for input. It has bookmarks, a built-in mirror command, and can transfer several files in parallel. It was designed with reliability in mind. LFTP is free software, distributed under the GNU GPL license.</Overview>
   <Registry>https://registry.hub.docker.com/u/robshad/lftp-sync/</Registry>
   <Repository>robshad/lftp-sync</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
+    <Variable>
+      <Name>REMOTEDIR</Name>
+      <Value>/path/on/remote/server</Value>
+    </Variable>
     <Variable>
       <Name>PUID</Name>
       <Value>99</Value>
@@ -47,7 +55,6 @@
     </Volume>
   </Data>
 <WebUI>http://[IP]:[PORT]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-banner.png</Banner>
-  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/deluge-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/robshad/lftp-sync/master/icon.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
