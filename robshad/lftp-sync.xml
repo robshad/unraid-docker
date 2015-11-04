@@ -30,7 +30,7 @@
   <Environment>
     <Variable>
       <Name>CRON</Name>
-      <Value>*/1 * * * *</Value>
+      <Value>*/30 * * * *</Value>
     </Variable>
     <Variable>
       <Name>REMOTEDIR</Name>
