@@ -2,7 +2,7 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Tools:</Category>
-  <Name>FileBot (Move)</Name>
+  <Name>FileBot-Move</Name>
   <Description>
   	This is a fork of the coppit/filebot docker but instead of copying the files, it moves them.
 
@@ -56,7 +56,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/filebot-move/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
