@@ -14,7 +14,10 @@
   This Docker will download from your remote server to your local unRAID server.[br][br]
     [b][span style='color: #E80000;']Steps you must take for this to work: [/b][br]
     You must set the environment variable:[br][br]
-    [ul][li]REMOTEDIR[/li]
+    [ul]
+    [li]CRON[/li]
+    [li]REMOTEDIR[/li]
+    [/ul]
     [br][br]
     You also must create the lftp-sync.cfg. You can rename the example config (lftp-sync-defaults.cfg)
   </Description>
@@ -25,6 +28,10 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
+    <Variable>
+      <Name>CRON</Name>
+      <Value>*/1 * * * *</Value>
+    </Variable>
     <Variable>
       <Name>REMOTEDIR</Name>
       <Value>/path/on/remote/server</Value>
