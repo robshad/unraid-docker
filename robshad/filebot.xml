@@ -2,13 +2,9 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Tools:</Category>
-  <Name>FileBot-Move</Name>
+  <Name>FileBot</Name>
   <Description>
-  	This is a fork of the coppit/filebot docker but instead of copying the files, it moves them.
-
-    FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or
-    just simple file verification. This container automatically renames and organizes files.[br][br]
-    For usage information, visit [b]https://registry.hub.docker.com/u/coppit/filebot/[/b].
+  	FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or just simple file verification.
   </Description>
   <Overview>
     FileBot is a media file organizer. Drop files into the input directory, and
@@ -16,7 +12,7 @@
   </Overview>
   <Support>http://www.robshad.com</Support>
   <Registry>https://registry.hub.docker.com/u/robshad/filebot/</Registry>
-  <GitHub>https://github.com/robshad/docker-filebot</GitHub>
+  <GitHub>https://github.com/robshad/filebot</GitHub>
   <Repository>robshad/filebot</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
@@ -56,7 +52,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/filebot-move/</HostDir>
+      <HostDir>/mnt/user/appdata/filebot/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
