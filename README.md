@@ -3,3 +3,4 @@
 Current Docker Applications
 - Filebot (Move) 
 - LFTP Sync
+- HandBrake-CLI
