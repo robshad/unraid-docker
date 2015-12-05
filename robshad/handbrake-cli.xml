@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Containers>
   <Beta>False</Beta>
-  <Category>Tools:</Category>
-  <Name>FileBot</Name>
+  <Category>MediaApp:Video</Category>
+  <Name>HandBrake-CLI</Name>
   <Description>
-  	FileBot is the ultimate tool for renaming your tv shows and anime, downloading subtitles from various sources or just simple file verification.
+  	HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.[br]
+    This docker will scan every 5 minutes for changes to the /input directory[br]
+    
+    [b]/config[/b] Where handbrake-cli should store a custom handbrake config[br]
+    [b]/input[/b] Map this to a folder you want to have handbrake convert[br]
+    [b]/output[/b] Map this to where you want completed files placed[br]
   </Description>
   <Overview>
-    FileBot is a media file organizer. Drop files into the input directory, and
-    they'll be cleaned up and moved to the output directory.
+    HandBrake is a tool for converting video from nearly any format to a selection of modern, widely supported codecs.
   </Overview>
   <Support>http://www.robshad.com</Support>
-  <Registry>https://registry.hub.docker.com/u/robshad/filebot/</Registry>
-  <GitHub>https://github.com/robshad/filebot</GitHub>
-  <Repository>robshad/filebot</Repository>
+  <Registry>https://registry.hub.docker.com/u/robshad/handbrake-cli/</Registry>
+  <GitHub>https://github.com/robshad/handbrake-cli-docker</GitHub>
+  <Repository>robshad/handbrake-cli-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
@@ -27,10 +31,6 @@
     </Publish>
   </Networking>
   <Environment>
-    <Variable>
-      <Name>CRON</Name>
-      <Value>*/30 * * * *</Value>
-    </Variable>
     <Variable>
       <Name>USER_ID</Name>
       <Value>99</Value>
@@ -56,12 +56,12 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/filebot/</HostDir>
+      <HostDir>/mnt/user/appdata/handbrake-cli/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>http://www.filebot.net/icon.png</Icon>
+  <Icon>https://handbrake.fr/img/logo.png</Icon>
 </Containers>
