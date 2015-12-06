@@ -16,8 +16,8 @@
   </Overview>
   <Support>http://www.robshad.com</Support>
   <Registry>https://registry.hub.docker.com/u/robshad/handbrake-cli/</Registry>
-  <GitHub>https://github.com/robshad/handbrake-cli-docker</GitHub>
-  <Repository>robshad/handbrake-cli-docker</Repository>
+  <GitHub>https://github.com/robshad/handbrake-cli</GitHub>
+  <Repository>robshad/handbrake-cli</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
     <Networking>
