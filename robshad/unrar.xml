@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Beta>False</Beta>
+  <Category>Tools:</Category>
+  <Date>2016-05-31</Date>
+  <Changes>
+
+  [center][font size=4]Auto Unrar[/font][/center]
+  [b]05/31/2016:[/b] Initial Release.
+  </Changes>
+  <Name>unrar</Name>
+  <Support>http://www.robshad.com</Support>
+  <Description>
+  This Docker will unrar any file in folder
+  </Description>
+  <Project></Project>
+  <Overview>Unrar.</Overview>
+  <Registry>https://registry.hub.docker.com/u/robshad/unrar/</Registry>
+  <Repository>robshad/unrar</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/unrar/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/input</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/output</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+<WebUI></WebUI>
+  <Icon>https://raw.githubusercontent.com/robshad/lftp-sync/master/icon.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
